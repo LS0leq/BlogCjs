@@ -1,0 +1,33 @@
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #0c060e;
+    color: white;
+    width: 100%;
+}
+
+.top-nav img{
+    height: 170px;
+}
+
+.top-nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 50%;
+}
+
+.top-nav>ul>li{
+    text-transform: uppercase;
+    transition: all var(--time);
+}
+
+.top-nav ul li:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+.top-nav>uL>li.active {
+    color: #f5c518;
+}
