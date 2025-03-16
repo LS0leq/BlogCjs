@@ -9,4 +9,6 @@ export const RootLayout = new CjsLayout(
     ]
 );
 
-
+RootLayout.onLoad(() => {
+    Search.set('blogs');
+});

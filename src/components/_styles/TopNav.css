@@ -27,7 +27,8 @@
 .top-nav ul li:hover {
     cursor: pointer;
     scale: 1.1;
+    color: #fecf8d;
 }
 .top-nav>uL>li.active {
-    color: #f5c518;
+    color: #cd955a;
 }
