@@ -21,10 +21,14 @@
 
 .blogs>.box>img{
     width: 400px;
+    transition: all var(--time);
+
 }
 
 .blogs>.box>h3{
     color: var(--fontColor);
+    transition: all var(--time);
+
 }
 .blogs>.box>p{
     width: 200px;
@@ -32,5 +36,18 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    transition: all var(--time);
+}
+
+.blogs>.pop>img{
+    width: 800px !important;
+}
+
+.blogs>.pop>h3{
+    font-size: 50px !important;
+}
+.blogs>.pop>p{
+    width: 600px !important;
+    white-space: normal !important;
 
 }

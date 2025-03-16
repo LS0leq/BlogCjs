@@ -4,12 +4,13 @@ import {LandingLayout} from "../layouts/landing/landing/LandingLayout.mjs";
 const Box = new CjsComponent((data) => {
 
     const readMore = (data) => {
-        Search.set("/blogs/" + data.id);
-        LandingLayout.loadContent("blog-detail");
+        document.getElementById(`${data.id}`).classList.toggle('pop')
+
+
     };
 
     return `
-        <div class="box">
+        <div class="box" id="${data.id}">
             <img src="${jpg(data.img)}" alt="Blog image">
             <h3>${data.title}</h3>
             <p>${data.text}</p>
