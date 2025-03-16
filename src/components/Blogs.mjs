@@ -1,12 +1,9 @@
 import {Button} from "./Button.mjs";
-import {LandingLayout} from "../layouts/landing/landing/LandingLayout.mjs";
 
 const Box = new CjsComponent((data) => {
 
     const readMore = (data) => {
         document.getElementById(`${data.id}`).classList.toggle('pop')
-
-
     };
 
     return `
