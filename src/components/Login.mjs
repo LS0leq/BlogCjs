@@ -8,9 +8,8 @@ export const Login = new CjsComponent((data) => {
             <h1>Logowanie</h1>
             <p>Jeśli nie masz konta skontaktuj się z administracją.</p>
             <form>
-                ${Input.render({type: 'text', placeholder: 'Imię'})}
                 ${Input.render({type: 'email', placeholder: 'Email'})}
-                ${Input.render({type: 'text', placeholder: 'Wiadomość'})}
+                ${Input.render({type: 'password', placeholder: 'Hasło'})}
                 ${Button.render({text: 'Wyślij'})}
             </form>
         </div>
