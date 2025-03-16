@@ -4,9 +4,10 @@ export const Header = new CjsComponent((data) => {
     let info;
 
     if(path=="blogs")path="Blogi",info = "Przeglądasz najnowsze posty z blogu informatycznego"
-    if(path=="contact")path="Kontakt",info = "Skontaktuj się z nami"
-    if(path=="login")path="Logowanie",info = "Zaloguj się oraz utwórz post"
-    if(path=="admin")path="Admin",info = "Panel administracyjny"
+    else if(path=="contact")path="Kontakt",info = "Skontaktuj się z nami"
+    else if(path=="login")path="Logowanie",info = "Zaloguj się oraz utwórz post"
+    else if(path=="admin")path="Admin",info = "Panel administracyjny"
+    else path = "Error404", info = "Nie znaleziono strony"
 
     return `
         <header>
