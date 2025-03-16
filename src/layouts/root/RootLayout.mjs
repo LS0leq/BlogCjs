@@ -25,6 +25,7 @@ RootLayout.onLoad(() => {
     else if(path=="login")RootLayout.loadLogin();
     else if(path=="admin")RootLayout.loadAdmin();
     else RootLayout.loadError();
+    // RootLayout.loadLanding();
 
 
 });
