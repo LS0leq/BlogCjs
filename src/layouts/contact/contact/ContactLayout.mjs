@@ -1,14 +1,14 @@
 import {Wrapper} from "../../Wrapper.mjs";
 import {TopNav} from "../../../components/TopNav.mjs";
 import {Header} from "../../../components/Header.mjs";
-import {Blogs} from "../../../components/Blogs.mjs";
+import {Contact} from "../../../components/Contact.mjs";
 
-export const LandingLayout = new CjsLayout(
+export const ContactLayout = new CjsLayout(
     [
         [Wrapper,[
             [TopNav],
             [Header],
-            [Blogs],
+            [Contact]
         ]]
     ]
 );

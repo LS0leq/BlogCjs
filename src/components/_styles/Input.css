@@ -1,0 +1,25 @@
+input{
+    padding: 10px;
+    border: 2px solid var(--fontColor);
+    background-color: var(--bg);
+    transition: all var(--time);
+    color: var(--fontColor);
+}
+
+input::placeholder{
+    color: var(--fontColor);
+    transition: all var(--time);
+}
+
+
+input:focus{
+    outline: none;
+    border: 2px solid var(--bg);
+    background-color: var(--fontColor);
+    color: var(--bg);
+
+}
+
+input:focus::placeholder{
+    color: var(--bg);
+}
