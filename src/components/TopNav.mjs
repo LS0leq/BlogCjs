@@ -23,12 +23,11 @@ export const TopNav = new CjsComponent((data) => {
 
     return `
         <div class="top-nav">
+            <img src="${png(`logo`)}" alt="Google logo">
+        
                 <ul>
                     ${Li.render({text: 'Blogi', search: 'blogs',img:'blog'})}
                     ${Li.render({text: 'Kontakt', search: 'contact',img:'message'})}
-                </ul>
-            <img src="${png(`logo`)}" alt="Google logo">
-                <ul>
                     ${Li.render({text: 'Zaloguj się', search: 'login',img:'login'})}
                     ${Li.render({text: 'Panel admina', search: 'admin',img:'admin'})}
 

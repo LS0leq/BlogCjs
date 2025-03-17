@@ -39,6 +39,18 @@
     transition: all var(--time);
 }
 
+.blogs>.box>.info{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+}
+
+.blogs>.box>.info>h1{
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
 .blogs>.pop>img{
     width: 800px !important;
 }
@@ -50,4 +62,16 @@
     width: 600px !important;
     white-space: normal !important;
 
+}
+.blogs>.box>.info>.icon{
+    height: 30px;
+}
+
+.blogs>.box>.info>.user{
+    filter: invert(1);
+    color: black;
+}
+
+.blogs>.box>.info>.admin{
+    filter: invert(67%) sepia(45%) saturate(584%) hue-rotate(358deg) brightness(95%) contrast(85%);
 }
