@@ -8,7 +8,7 @@
 
 .blogs>.box{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding: 25px;
     background-color: black;
@@ -20,7 +20,7 @@
 }
 
 .blogs>.box>img{
-    width: 400px;
+    width: 100px;
     transition: all var(--time);
 
 }
@@ -74,4 +74,8 @@
 
 .blogs>.box>.info>.admin{
     filter: invert(67%) sepia(45%) saturate(584%) hue-rotate(358deg) brightness(95%) contrast(85%);
+}
+
+.blogs>.box.pop{
+    flex-direction: column !important;
 }
