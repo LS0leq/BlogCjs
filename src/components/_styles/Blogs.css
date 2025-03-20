@@ -1,3 +1,7 @@
+*{
+    transition: all var(--time);
+}
+
 .blogs{
     display: flex;
     flex-direction: column;
@@ -19,7 +23,7 @@
     align-items: center;
     padding: 25px;
     background-color: black;
-    width: 75vw;
+    width: 70vw;
     align-self: center;
     border-radius: 5px;
     color: white;
@@ -28,13 +32,11 @@
 
 .blogs>.box>.rest>img{
     width: 80px;
-    transition: all var(--time);
 
 }
 
 .blogs>.box>.rest>h3{
     color: var(--fontColor);
-    transition: all var(--time);
     width: 80px;
     display: block;
     overflow: hidden;
@@ -47,7 +49,6 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    transition: all var(--time);
 }
 
 .blogs>.box>.info{
@@ -55,11 +56,14 @@
     width: 100%;
     gap: 10px;
     align-items: center;
+    justify-content: space-around;
+    text-align: center;
 }
 
-.blogs>.box>.info>h1{
+.blogs>.box>.info>div>h1,.blogs>.box>.info>h1{
     text-transform: capitalize;
     font-size: 16px;
+
 }
 
 .blogs>.pop>.rest>img{
@@ -74,21 +78,25 @@
     white-space: normal !important;
 
 }
-.blogs>.box>.info>.icon{
+.blogs>.box>.info>div>.icon{
     height: 30px;
 }
 
-.blogs>.box>.info>.user{
+.blogs>.box>.info>div>.user{
     filter: invert(1);
     color: black;
 }
 
-.blogs>.box>.info>.admin{
+.blogs>.box>.info>div>.admin{
     filter: invert(67%) sepia(45%) saturate(584%) hue-rotate(358deg) brightness(95%) contrast(85%);
 }
 
 .blogs>.box.pop{
     flex-direction: column !important;
+}
+
+.blogs>.box.pop>.info{
+    justify-content: flex-start;
 }
 
 .blogs>.box.pop>.rest{
@@ -124,7 +132,6 @@
     font-size: 12px;
     text-transform: capitalize;
     justify-content: space-around;
-    transition: all var(--time);
 }
 .blogs>.category>ul{
     margin-top: 20px;

@@ -9,9 +9,11 @@ const Box = new CjsComponent((data) => {
     return `
         <div class="box" id="${data.id}" data-category="${data.category}">
             <div class="info">
-                <img src="${svg('user')}" alt="User image" class="icon ${data.role}">
-                <h1 class="${data.role}">${data.role}</h1>
-                <h1 class="${data.category}">Kategoria: ${data.category}</h1>
+                <div>
+                    <img src="${svg('user')}" alt="User image" class="icon ${data.role}">
+                    <h1 class="${data.role}">${data.role}</h1>
+                </div>
+                <h1 class="${data.category}">Kategoria: <br/> ${data.category}</h1>
             </div>
             <div class="rest">
                 <img src="${jpg(data.img)}" alt="Blog image">
@@ -51,7 +53,11 @@ export const Blogs = new CjsComponent((data) => {
         <div class="blogs">
             ${Box.render({id:1,title: 'Artkył', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt ullamcorper erat.',img:'blog', role:'user',category:"IT"})}
             
-            ${Box.render({id:2,title: 'Tytułowo', text: 'Cras aliquet, leo quis lacinia placerat, sem risus porttitor quam, nec imperdiet enim sapien at odio. Etiam ornare maximus ligula sed iaculis. Etiam semper dolor.',img:'blog',role:'admin',category:"Programowanie"})}
+            ${Box.render({id:2,title: 'Tytułowo', text: 'Cras aliquet, leo quis lacinia placerat, sem risus porttitor quam, nec imperdiet enim sapien at odio. Etiam ornare maximus ligula sed iaculis. Etiam semper dolor.',img:'blog',role:'admin',category:"Kodowanie"})}
+            ${Box.render({id:3,title: 'Tytułowo', text: 'Cras aliquet, leo quis lacinia placerat, sem risus porttitor quam, nec imperdiet enim sapien at odio. Etiam ornare maximus ligula sed iaculis. Etiam semper dolor.',img:'blog',role:'user',category:"Aplikacje"})}
+            ${Box.render({id:4,title: 'Tytułowo', text: 'Cras aliquet, leo quis lacinia placerat, sem risus porttitor quam, nec imperdiet enim sapien at odio. Etiam ornare maximus ligula sed iaculis. Etiam semper dolor.',img:'blog',role:'admin',category:"Aplikacje"})}
+            ${Box.render({id:5,title: 'Tytułowo', text: 'Cras aliquet, leo quis lacinia placerat, sem risus porttitor quam, nec imperdiet enim sapien at odio. Etiam ornare maximus ligula sed iaculis. Etiam semper dolor.',img:'blog',role:'user',category:"IT"})}
+            ${Box.render({id:2,title: 'Tytułowo', text: 'Cras aliquet, leo quis lacinia placerat, sem risus porttitor quam, nec imperdiet enim sapien at odio. Etiam ornare maximus ligula sed iaculis. Etiam semper dolor.',img:'blog',role:'admin',category:"Kodowanie"})}
             ${Box.render({id:3,title: 'Tytułowo', text: 'Cras aliquet, leo quis lacinia placerat, sem risus porttitor quam, nec imperdiet enim sapien at odio. Etiam ornare maximus ligula sed iaculis. Etiam semper dolor.',img:'blog',role:'user',category:"Aplikacje"})}
             ${Box.render({id:4,title: 'Tytułowo', text: 'Cras aliquet, leo quis lacinia placerat, sem risus porttitor quam, nec imperdiet enim sapien at odio. Etiam ornare maximus ligula sed iaculis. Etiam semper dolor.',img:'blog',role:'admin',category:"Aplikacje"})}
             ${Box.render({id:5,title: 'Tytułowo', text: 'Cras aliquet, leo quis lacinia placerat, sem risus porttitor quam, nec imperdiet enim sapien at odio. Etiam ornare maximus ligula sed iaculis. Etiam semper dolor.',img:'blog',role:'user',category:"IT"})}
@@ -60,7 +66,7 @@ export const Blogs = new CjsComponent((data) => {
                 <ul>
                     ${Li.render({category: 'Wszystkie'})}
                     ${Li.render({category: 'IT'})}
-                    ${Li.render({category: 'Programowanie'})}
+                    ${Li.render({category: 'Kodowanie'})}
                     ${Li.render({category: 'Aplikacje'})}
                     ${Li.render({category: 'Inne'})}
                 </ul>
