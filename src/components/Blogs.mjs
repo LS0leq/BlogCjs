@@ -13,17 +13,18 @@ const Box = new CjsComponent((data) => {
                     <img src="${svg('user')}" alt="User image" class="icon ${data.role}">
                     <h1 class="${data.role}">${data.role}</h1>
                 </div>
-                <h1 class="category ${data.category}">${data.category}</h1>
-            </div>
-            <div class="rest">
+                <h1 class="category ${data.category}"><img src="${svg(`${data.category}`)}" alt="category" class="icon "> ${data.category}</h1>
+                
                 <img src="${jpg(data.img)}" alt="Blog image">
                 
                 <div>
                     <h3>${data.title}</h3>
                     <p>${data.text}</p>
                 </div>
-                ${Button.render({text: 'Przeczytaj więcej',click: ()=>readMore(data)})}
             </div>
+                
+                
+                ${Button.render({text: 'Przeczytaj więcej',click: ()=>readMore(data)})}
         </div>
     `;
 });

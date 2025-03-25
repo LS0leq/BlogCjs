@@ -11,31 +11,24 @@
 }
 
 
-.blogs>.box>.rest{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    align-items: center;
-}
 
 .blogs>.box{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 25px;
-    width: 70vw;
+    width: 64vw;
     align-self: center;
     border-radius: 5px;
     color: white;
-    gap: 12px;
 }
 
-.blogs>.box>.rest>img{
-    width: 80px;
+.blogs>.box>.info>img{
+    width: 60px;
 
 }
 
-.blogs>.box>.rest>div>h3{
+.blogs>.box>.info>div>h3{
     color: var(--fontColor);
     width: 80px;
     display: block;
@@ -43,7 +36,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.blogs>.box>.rest>div>p{
+.blogs>.box>.info>div>p{
     width: 200px;
     display: block;
     overflow: hidden;
@@ -66,12 +59,20 @@
 
 }
 
-.blogs>.box>.info>.category{
-    padding: 5px;
+.blogs>.box>.info>h1.category{
+    padding: 4px;
     border-radius: 5px;
     background-color: var(--bgL);
     color: var(--bgLL);
-    width: 100px;
+    gap: 8px;
+    display: flex;
+    font-size: 14px;
+}
+
+.blogs>.box>.info>h1.category img{
+    height: 14px;
+    width: 14px;
+    filter: invert(40%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(90%);
 }
 
 .blogs>.pop{
@@ -79,14 +80,14 @@
     transition: all var(--time);
 }
 
-.blogs>.pop>.rest>img{
+.blogs>.pop>.info>img{
     width: 500px !important;
 }
 
-.blogs>.pop>.rest>div>h3{
+.blogs>.pop>.info>div>h3{
     font-size: 50px !important;
 }
-.blogs>.pop>.rest>div>p{
+.blogs>.pop>.info>div>p{
     width: 600px !important;
     white-space: normal !important;
 
@@ -106,18 +107,19 @@
 
 .blogs>.box.pop{
     flex-direction: column !important;
+    gap: 20px;
 }
 
 .blogs>.box.pop>.info{
     justify-content: flex-start;
 }
 
-.blogs>.box.pop>.rest{
+.blogs>.box.pop>.info{
     flex-direction: column !important;
     gap: 20px;
 }
 
-.blogs>.box.pop>.rest>div>h3,.blogs>.box.pop>.rest>div>p{
+.blogs>.box.pop>.info>div>h3,.blogs>.box.pop>.info>div>p{
     width: 800px !important;
     text-align: center;
 }
@@ -135,10 +137,8 @@
 }
 
 .blogs>.category>ul>li{
-    width: 100%;
     text-align: center;
     display: flex;
-    padding: 5px;
     border-radius: 5px;
     border: 1px solid var(--fontColor);
     color: white;
