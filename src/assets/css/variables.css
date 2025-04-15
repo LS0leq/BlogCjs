@@ -1,4 +1,9 @@
 :root {
     --time: 0.3s;
-
+    --fontColor:#cd955a;
+    --hover:#fecf8d;
+    --bg: #090909;
+    --bgL: #101010;
+    --bgLL: #606060;
+    --bgD: #080808;
 }
